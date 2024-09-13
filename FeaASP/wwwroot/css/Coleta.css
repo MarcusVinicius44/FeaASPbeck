@@ -1,0 +1,51 @@
+﻿.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 40px;
+}
+
+.localização {
+    background: rgb(254,148,0);
+    background: linear-gradient(90deg, rgba(254,148,0,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 20px; /* Ajuste o padding para criar mais espaço interno */
+    width: 100%; /* Garantir que o contêiner ocupe toda a largura disponível */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+
+
+.p {
+    font-size: 20px;
+}
+
+.localização h1 {
+    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+    text-align: center; /* Alinha o texto ao centro do contêiner */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão se houver */
+    line-height: 1.2; /* Ajuste a altura da linha para melhorar o espaçamento */
+}
+
+.imgcoleta1 {
+    width: 100%; /* Faz com que o contêiner da imagem ocupe toda a largura disponível */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+
+.imgcoleta {
+    width: 150%; /* Faz com que a imagem ocupe toda a largura do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.map-container {
+    width: 100%; /* Faz com que o contêiner do mapa ocupe toda a largura disponível */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    max-width: 1500px; /* Define uma largura máxima se necessário */
+}
+
+
+    .map-container iframe {
+        width: 150%; /* Faz com que o iframe ocupe toda a largura do contêiner pai */
+        max-width: 1500px; /* Define uma largura máxima se necessário */
+        height: 750px; /* Define uma altura fixa para o mapa */
+        border: 0; /* Remove a borda padrão do iframe */
+    }
