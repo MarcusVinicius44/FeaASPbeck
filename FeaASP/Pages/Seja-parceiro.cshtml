@@ -1,0 +1,90 @@
+﻿@page
+@model SejaModel
+@{
+    ViewData["Title"] = "Contato";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;700&display=swap">
+    <link rel="stylesheet" href="~/css/app.css">
+    <link rel="stylesheet" href="~/css/Seja.css">
+</head>
+<body>
+
+    <div class="ctt">
+        <h2 class="mb-4">Fale Conosco</h2>
+
+        <form id="contatoForm">
+            <div class="form-group Nome">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome:">
+            </div>
+
+            <div class="form-group Email">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email:">
+            </div>
+
+            <div class="form-group Telefone">
+                <label for="telefone">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone:">
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group Bairro">
+                        <label for="bairro">Bairro</label>
+                        <select id="bairro" class="form-control">
+                            <option>Selecione o Bairro</option>
+                            <option value="Barra">Barra</option>
+                            <option value="Rio Vermelho">Rio Vermelho</option>
+                            <option value="Pituba">Pituba</option>
+                            <option value="Itapuã">Itapuã</option>
+                            <option value="Ondina">Ondina</option>
+                            <option value="Amaralina">Amaralina</option>
+                            <option value="Brotas">Brotas</option>
+                            <option value="Imbuí">Imbuí</option>
+                            <option value="Stella Maris">Stella Maris</option>
+                            <option value="Paralela">Paralela</option>
+                            <option value="São Cristóvão">São Cristóvão</option>
+                            <option value="Pernambués">Pernambués</option>
+                            <option value="Garcia">Garcia</option>
+                            <option value="Campo Grande">Campo Grande</option>
+                            <option value="Liberdade">Liberdade</option>
+                            <option value="Graça">Graça</option>
+                            <option value="Cabula">Cabula</option>
+                            <option value="Cajazeiras">Cajazeiras</option>
+                            <option value="Federação">Federação</option>
+                            <option value="Bonfim">Bonfim</option>
+                            <option value="Boca do Rio">Boca do Rio</option>
+                            <option value="Costa Azul">Costa Azul</option>
+                            <option value="Alphaville">Alphaville</option>
+                            <option value="Patamares">Patamares</option>
+                            <option value="Narandiba">Narandiba</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group Mensagem">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem:"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary ctt-custom">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contatoForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Aqui você pode adicionar lógica para registrar o usuário
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿@page
+@model FEAasp.Pages.ContatoModel
+@{
+    ViewData["Title"] = "Contato";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;700&display=swap">
+    <link href="~/css/app.css" rel="stylesheet" />
+    <link href="~/css/Contato.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="ctt">
+        <h2 class="mb-4">Fale Conosco</h2>
+
+        <form id="contactForm" method="post">
+            <div class="form-group mb-4">
+                <label for="nomeContato">Nome</label>
+                <input type="text" class="form-control" id="nomeContato" name="contato.nomeContato" placeholder="Digite seu nome:" required>
+            </div>
+
+            <div class="form-group mb-4">
+                <label for="emailContato">E-mail</label>
+                <input type="email" class="form-control" id="emailContato" name="contato.emailContato" placeholder="Digite seu e-mail:" required>
+            </div>
+            <div class="form-group mb-4">
+                <label for="telefoneContato">Número</label>
+                <input type="number" class="form-control" id="telefoneContato" name="contato.telefoneContato" placeholder="Digite seu número" required>
+            </div>
+            <div class="form-group mb-4">
+                <label for="mensagem">Mensagem</label>
+                <input type="text" class="form-control" id="mensagem" name="contato.mensagem" placeholder="Digite sua mensagem" required>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary ctt-custom">Enviar</button>
+        </form>
+
+    </div>
+
+    <style>
+        .ctt{
+            height: 670px;
+        }
+        .ctt-custom{
+            position: relative;
+            bottom: 36px;
+        }
+    </style>
+</body>
+</html>

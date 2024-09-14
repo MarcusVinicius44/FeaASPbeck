@@ -1,0 +1,43 @@
+﻿@page
+@model ForumModel
+@{
+    ViewData["Title"] = "Forum";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/app.css" />
+    <link rel="stylesheet" href="~/css/Forum.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;700&display=swap">
+
+
+
+    <title>Fórum</title>
+  
+</head>
+<body>
+    <div class="FEA">
+        <h1>Fórum</h1>
+        <div id="posts-container"></div>
+        <form id="post-form">
+            <div class="nome">
+                Nome:
+                <input type="text" id="author" />
+            </div>
+            <div class="Idade">
+                Idade:
+                <input type="number" id="age" />
+            </div>
+            <div class="misericordia">
+                Conteúdo:
+                <textarea id="content"></textarea>
+            </div>
+            <button type="submit" class="botao">Postar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
